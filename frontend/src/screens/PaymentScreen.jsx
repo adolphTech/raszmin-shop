@@ -6,6 +6,7 @@ import { Form, Button, Col } from "react-bootstrap";
 import CheckoutSteps from "../components/CheckoutSteps";
 import FormContainer from "../components/FormContainer";
 import {savePaymentMethod} from "../slices/cartSlice";
+import Meta from "../components/Meta";
 
 function PaymentScreen() {
     const dispatch = useDispatch();

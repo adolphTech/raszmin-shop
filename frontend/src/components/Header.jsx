@@ -7,6 +7,9 @@ import {LinkContainer} from "react-router-bootstrap"
 import{useSelector,useDispatch} from "react-redux";
 import {useLogoutMutation} from "../slices/usersApiSlice";
 import {logout} from "../slices/authSlice";
+import SearchBox from "./SearchBox";
+
+
 
 function Header() {
   const {cartItems} = useSelector(state=>state.cart)
@@ -37,7 +40,7 @@ function Header() {
         <LinkContainer to="/">
         <Navbar.Brand >
           <img src={Logo} alt="logo"/>
-          ProShop
+          LiteShop
           </Navbar.Brand>
 
         </LinkContainer>
@@ -46,7 +49,7 @@ function Header() {
 
           <Navbar.Collapse>
             <Nav className="ms-auto">
-              
+              <SearchBox/>
               <LinkContainer to="/cart">
               <Nav.Link >
                 <FaShoppingCart />
