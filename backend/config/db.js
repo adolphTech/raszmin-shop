@@ -12,7 +12,7 @@ const connectDB = async()=>{
         console.log(password)
         // "mongodb+srv://<username>:<password>@depls-ady.lmq844j.mongodb.net/?retryWrites=true&w=majority"
     
-       const conn = await mongoose.connect(`mongodb+srv://${username}:${password}@depls-ady.lmq844j.mongodb.net/?retryWrites=true&w=majority`);
+       const conn = await mongoose.connect(`mongodb+srv://${username}:${password}@depls-ady.lmq844j.mongodb.net/${dbname}?retryWrites=true&w=majority`);
       
         console.log(`mongoDb connected :${conn.connection.host}`)
     }catch(e){
