@@ -9,7 +9,7 @@ function Footer() {
         <Container>
             <Row>
             <Col className='text-center py-3'>
-            <p>ProShop &copy; {currentYear}</p>
+            <p><a href='https://adolph.vercel.app'>Adolph</a> &copy; {currentYear}</p>
 
             </Col>
 
